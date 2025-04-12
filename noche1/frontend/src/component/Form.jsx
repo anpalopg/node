@@ -22,19 +22,20 @@ const Form = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2> Datos</h2>
+            <h2>Datos</h2>
             <label>
                 nombre
                 <input type=' text' name="nombre" value={formData.nombre} onChange={handleChange}></input>
             </label>
             <label>
                 correo
-                <input type=' text' email="nombre" value={formData.email} onChange={handleChange}></input>
+                <input type=' text' name="correo" value={formData.email} onChange={handleChange}></input>
             </label>
-            <button type='submit'>Enviar </button>
-            <button type='submit'>Cancelar</button>
 
+            <p className='mensaje-exito'>Gracias por tu mensaje .</p>
 
+            <button type='submit'>Enviar</button>
+            <button>Cancelar</button>
 
         </form >
 
